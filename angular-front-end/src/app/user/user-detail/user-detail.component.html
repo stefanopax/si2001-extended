@@ -1,0 +1,68 @@
+<h1 style="font-family: Optima">User</h1>
+<div class="myform">
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>Username</th>
+        <td>{{ user.username }}</td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td>{{ user.name }}</td>
+      </tr>
+      <tr>
+        <th>Surname</th>
+        <td>{{ user.surname }}</td>
+      </tr>
+      <tr>
+        <th>Birthday</th>
+        <td>{{ user.birthday|date:('y-M-d H:m:s') }}</td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <ng-container *ngIf="user.country;else other_content">
+          <td>{{ user.country }}</td>
+        </ng-container>
+        <ng-template #other_content>
+          <td>Unknown</td>
+        </ng-template>
+      </tr>
+      <tr>
+        <th>Link</th>
+        <td>
+          <img class="img-responsive" src="assets/images/{{ user.link }}" height="42" width="42" alt="myimage">
+      </tr>
+      <tr>
+        <th>Status</th>
+        <ng-container *ngIf="user.country;else other_content">
+          <td>{{ user.status.name }}</td>
+        </ng-container>
+        <ng-template #other_content>
+          <td>Unknown</td>
+        </ng-template>
+      </tr>
+      <tr>
+        <th>Skills</th>
+        <td>
+          <ng-container *ngFor="let skill of user.skillIds">
+            <button type="button" class="btn btn-warning" disabled>
+              {{ skill.name }}
+            </button>&nbsp;
+          </ng-container>
+        </td>
+      </tr>
+      <tr>
+        <th>Roles</th>
+        <td>
+          <ng-container *ngFor="let role of user.roleIds">
+            <button type="button" class="btn btn-outline-info" disabled>
+              {{ role.name }}
+            </button>&nbsp;
+          </ng-container>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-info" routerLink="/user" routerLinkActive="active">Back to list</a>
+  <a class="btn btn-secondary" [routerLink]="['/user/edit', user.id]">Edit</a>
+</div>

@@ -1,0 +1,78 @@
+<h1 style="font-family: Optima">Employees</h1>
+<div class="d-flex justify-content-end">
+  <a class="btn btn-success align-content-xl-end btn-lg" routerLink="/user/new" routerLinkActive="active">New Employe</a>
+</div>
+<div *ngIf="users; then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Username</th>
+          <th>Birthday</th>
+          <th>Country</th>
+          <th>Marital Status</th>
+          <th>Skill</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>
+              <img class="img-responsive" src="assets/images/{{ user.link }}" height="42" width="42" alt="myimage">
+            </td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.surname }}</td>
+            <td>
+              <span class="badge badge-dark">
+                  {{ user.username }}
+              </span>
+            </td>
+
+            <ng-container *ngIf="user.birthday;else other_content">
+              <td>{{ user.birthday|date:('y-M-d H:m:s') }}</td>
+            </ng-container>
+            <ng-template #other_content>
+              <td>Unknown</td>
+            </ng-template>
+
+            <ng-container *ngIf="user.country;else other_content">
+              <td>{{ user.country }}</td>
+            </ng-container>
+            <ng-template #other_content>
+              <td>Unknown</td>
+            </ng-template>
+
+            <ng-container *ngIf="user.status;else other_content">
+              <td>{{ user.status.name }}</td>
+            </ng-container>
+            <ng-template #other_content>
+              <td>Unknown</td>
+            </ng-template>
+
+            <div *ngIf="user.skillIds;else other_content">
+              <td>
+                <ng-container *ngFor="let skill of user.skillIds">
+                  <button type="button" class="btn btn-warning" disabled>
+                    {{ skill.name }}
+                  </button>&nbsp;
+                </ng-container>
+              </td>
+            </div>
+            <ng-template #other_content>
+              <td>Unknown</td>
+            </ng-template>
+
+            <td>
+              <a class="btn btn-primary" [routerLink]="['/user', user.id]">Show</a>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+  </ng-template>
+
+<ng-template #elseBlock>
+  <p style="color: red">No users found, possible HTTP request failing</p>
+</ng-template>

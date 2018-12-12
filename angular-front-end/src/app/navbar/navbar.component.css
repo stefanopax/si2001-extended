@@ -1,0 +1,15 @@
+.a{
+  margin: auto;
+  border: 3px outset #D4DFDF;
+  padding: 10px;
+  width: 50%;
+  height: 90%;
+}
+li{
+  font-family: Palatino;
+  font-size: 1.2em;
+}
+.header
+{
+  box-shadow: 0 1px 0px 0px #000;
+}

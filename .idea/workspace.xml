@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8596aeb5-10e3-4dd9-9733-72d5559573bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/angular-front-end/src/app/user/user-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-front-end/src/app/user/user-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-front-end/src/app/user/user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-front-end/src/app/user/user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-front-end/src/app/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-front-end/src/app/user/user.module.ts" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/symfony-platform/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user-new/user-new.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../symfony/my-project/templates/user/new.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fos</find>
+      <find>article</find>
+      <find>user</find>
+      <find>ngif</find>
+      <find>find</find>
+      <find>control</find>
+      <find>$article</find>
+      <find>role</find>
+      <find>skill</find>
+      <find>emplo</find>
+      <find>|</find>
+      <find>&amp;nbsp</find>
+      <find>statu</find>
+      <find>status</find>
+      <find>deta</find>
+      <find>link</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/REST-API-SY4/src/Entity/Article.php" />
+        <option value="$PROJECT_DIR$/REST-API-SY4/src/Controller/ArticleController.php" />
+        <option value="$PROJECT_DIR$/REST-API-SY4/config/routes/annotations.yaml" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/article.ts" />
+        <option value="$PROJECT_DIR$/REST-API-SY4/.env" />
+        <option value="$PROJECT_DIR$/REST-API-SY4/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/REST-API-SY4/src/Controller/Rest/ArticleController.php" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/article/article.component.html" />
+        <option value="$PROJECT_DIR$/REST-API-SY4/src/Controller/Rest/UserController.php" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/article.service.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/article/article.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user.ts" />
+        <option value="$PROJECT_DIR$/symfony-back-end/config/packages/routing.yaml" />
+        <option value="$PROJECT_DIR$/../symfony/my-project/templates/user/index.html.twig" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/navbar/navbar.component.css" />
+        <option value="$PROJECT_DIR$/../symfony/my-project/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/pagenotfound/pagenotfound.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/pagenotfound/pagenotfound.component.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/pagenotfound/pagenotfound.component.spec.ts" />
+        <option value="$PROJECT_DIR$/symfony-back-end/src/Controller/Rest/StatusController.php" />
+        <option value="$PROJECT_DIR$/symfony-back-end/src/Controller/Rest/SkillController.php" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/skill.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/status.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/skill.service.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/status.service.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user.service.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/status/status.component.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/skill/skill.component.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/main.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/utility.service.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/index.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/status/status.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/skill/skill.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/page-not-found/page-not-found.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/page-not-found/page-not-found.component.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user-detail/user-detail.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user.module.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user.service.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user-detail/user-detail.component.ts" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user.component.css" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user-detail/user-detail.component.css" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user-detail/user-detail.component.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user.component.html" />
+        <option value="$PROJECT_DIR$/angular-front-end/src/app/user/user-routing.module.ts" />
+        <option value="$PROJECT_DIR$/../symfony/my-project/templates/user/new.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/api-platform/api-pack" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/composer" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/exsyst/swagger" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/nelmio/api-doc-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/panther" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/security" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/exception" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/ustring" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/zformat" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/consistency" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/iterator" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/protocol" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/regex" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/file" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/stream" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/math" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/compiler" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/event" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/hoa/visitor" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/symfony-platform/vendor/jms/serializer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1346" />
+    <option name="height" value="673" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-front-end" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544631598253" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../symfony/my-project" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\angular\angular-front-end\src\app" />
+      <recent name="C:\angular\symfony-back-end\src\Controller\Rest" />
+      <recent name="C:\angular\REST-API-SY4\src\Controller\Rest" />
+      <recent name="C:\angular\symfony-platform\config\routes" />
+      <recent name="C:\angular\symfony-platform\config\packages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\angular\angular-front-end\src\app\user" />
+      <recent name="C:\angular\angular-front-end\src\app\status" />
+      <recent name="C:\angular\angular-front-end\src\app\skill" />
+      <recent name="C:\angular\REST-API-SY4\src\Controller\Rest" />
+      <recent name="C:\angular\symfony-platform\config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8596aeb5-10e3-4dd9-9733-72d5559573bc" name="Default Changelist" comment="" />
+      <created>1544016494742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544016494742</updated>
+      <workItem from="1544016497018" duration="25000" />
+      <workItem from="1544016567750" duration="10000" />
+      <workItem from="1544016637189" duration="10768000" />
+      <workItem from="1544028716562" duration="437000" />
+      <workItem from="1544083804318" duration="14945000" />
+      <workItem from="1544103700504" duration="9671000" />
+      <workItem from="1544429641395" duration="7551000" />
+      <workItem from="1544437782694" duration="3112000" />
+      <workItem from="1544441536949" duration="5443000" />
+      <workItem from="1544451158494" duration="10021000" />
+      <workItem from="1544515798056" duration="20452000" />
+      <workItem from="1544602255484" duration="20906000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="103341000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49923196" visible="true" weight="0.22617246" />
+      <window_info id="Structure" order="1" sideWeight="0.50076807" side_tool="true" weight="0.25718608" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49923196" visible="true" weight="0.22617246" />
+      <window_info id="Structure" order="1" sideWeight="0.50076807" side_tool="true" weight="0.25718608" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/pagenotfound/pagenotfound.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/angular-front-end/node_modules/@ngtools/webpack/src/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/pagenotfound/pagenotfound.component.html" />
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/pagenotfound/pagenotfound.component.ts" />
+    <entry file="file://$PROJECT_DIR$/../symfony/my-project/templates/security/error.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../symfony/angular-tour-of-heroes/src/app/heroes/heroes.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony-back-end/src/Controller/Rest/StatusController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/skill/skill.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/status/status.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/skill/skill.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#small#0;n#a#0;n#div#0;n#nav#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#333#339#0" expanded="true" />
+            <element signature="e#1295#1301#0" expanded="true" />
+            <element signature="e#1525#1531#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#1;n#div#0;n#nav#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../symfony/my-project/templates/status/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/status/status.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/skill/skill.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/status/status.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/skill/skill.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/status/status.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/skill/skill.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/page-not-found/page-not-found.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/page-not-found/page-not-found.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user-detail/user-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user-detail/user-detail.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/node_modules/@ngtools/webpack/src/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony-back-end/src/Controller/Rest/SkillController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony-back-end/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../symfony/my-project/templates/user/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../symfony/my-project/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../symfony/my-project/templates/user/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user-detail/user-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user-detail/user-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user-new/user-new.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user-detail/user-detail.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../symfony/my-project/templates/user/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-front-end/src/app/user/user-new/user-new.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../symfony/my-project/templates/user/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>angular</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

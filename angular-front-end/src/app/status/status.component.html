@@ -1,0 +1,23 @@
+<h1 style="font-family: Optima">Status</h1>
+<br>
+<div *ngIf="allstatus; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+  <table class="table table-striped table-light">
+    <thead class="thead-light">
+    <tr>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let status of allstatus">
+      <td>{{ status.name }}</td>
+      <td><i>In working</i></td>
+    </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #elseBlock>
+  <p style="color: red">No status found, possible HTTP request failing</p>
+</ng-template>
