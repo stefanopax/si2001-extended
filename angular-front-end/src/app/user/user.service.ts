@@ -25,8 +25,9 @@ export class UserService {
     }
 
     /** POST user to server */
-    postUser (myUser: User): Observable<any> {
-      return this._http.post(this.userUrl, myUser);
+    addUser (myUser: string) {
+      let url = `${this.userUrl}?${myUser}`;
+      return this._http.post(url,'');
     }
 
 }

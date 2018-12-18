@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StatusService } from './status.service';
 import { Status } from "./status";
-import {UtilityService} from "../utility.service";
+import { UtilityService } from "../utility.service";
 
 @Component({
   selector: 'app-status',
@@ -12,7 +12,7 @@ import {UtilityService} from "../utility.service";
 export class StatusComponent implements OnInit {
 
   allstatus;
-  title = 'Status | SI2001';
+
   constructor(
     private statusService: StatusService,
     private utilityService: UtilityService

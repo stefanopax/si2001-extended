@@ -1,0 +1,61 @@
+<h1 style="font-family: Optima">Edit User</h1>
+{{diagnostic}}
+<div [hidden]="submitted">
+  <div class="myform">
+    <form (ngSubmit)="onSubmit()" #userEdit="ngForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" required name="username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" required name="password">
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required name="name">
+      </div>
+      <div class="form-group">
+        <label for="surname">Surname</label>
+        <input type="text" class="form-control" id="surname" required name="surname">
+      </div>
+      <div class="form-group">
+        <label for="birthday">Birthday</label>
+        <input type="text" class="form-control" id="birthday" name="birthday">
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" id="country" name="country">
+      </div>
+      <div class="form-group">
+        <label for="link">Image</label>
+        <input type="file" class="form-control" id="link" name="link">
+      </div>
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status" name="status">
+          <option *ngFor="let s of status" [value]="s">{{s.name}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Roles</label>
+        <div *ngFor="let r of roles">
+          <input type="checkbox" [value]="roles">{{r}}
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Skills</label>
+        <div *ngFor="let skill of skills; let i = index">
+          <input type="checkbox" [value]="skill">{{skill.name}}
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success" (click)="editUser()">Submit</button>&nbsp;
+      <a class="btn btn-info" routerLink="/user" routerLinkActive="active">Back to list</a>
+    </form>
+  </div>
+</div>
+<div class="myform" [hidden]="!submitted">
+  <h2>You submitted the following:</h2>
+  <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+</div>
+

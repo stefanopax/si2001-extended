@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { Status } from './';
+import { Status } from './status';
 
 @Injectable({
   providedIn: 'root'
@@ -19,8 +19,9 @@ export class StatusService {
   }
 
   /** GET one status from the server */
-  getOneStatus (id: number): Observable<any> {
-    return this._http.get(this.statusUrl);
+  getOneStatus (id: string): Observable<any> {
+    let url = `${this.statusUrl}/${id}`;
+    return this._http.get(url);
   }
 
   /** POST status to server */

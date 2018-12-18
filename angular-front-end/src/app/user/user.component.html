@@ -1,4 +1,4 @@
-<h1 style="font-family: Optima">Employees</h1>
+<h1>Employees</h1>
 <div class="d-flex justify-content-end">
   <a class="btn btn-success align-content-xl-end btn-lg" routerLink="/user/new" routerLinkActive="active">New Employe</a>
 </div>
@@ -66,7 +66,8 @@
             </ng-template>
 
             <td>
-              <a class="btn btn-primary" [routerLink]="['/user', user.id]">Show</a>
+              <a class="btn btn-primary" [routerLink]="['/user', user.id]">Show</a>&nbsp;
+              <a class="btn btn-danger" [routerLink]="['/user', user.id, 'edit']">Edit</a>
             </td>
           </tr>
         </tbody>

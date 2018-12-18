@@ -13,12 +13,9 @@ use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use FOS\RestBundle\View\View;
 use FOS\RestBundle\Controller\Annotations as FOSRest;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
@@ -50,7 +47,6 @@ class UserController extends FOSRestController
             $serializer->serialize($users, 'json');
          */
 
-
         return View::create($users, Response::HTTP_CREATED , []);
     }
 
@@ -79,12 +75,13 @@ class UserController extends FOSRestController
      *
      * @return View
      */
-    public function postUserAction(Request $request)
+    public function postUserAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
         $user = new User();
         // insert not-nullable fields
         $user->setUsername($request->get("username"));
-        $user->setPassword($request->get("password"));
+        $user->setPassword(
+            $passwordEncoder->encodePassword($user, $request->get("username")));
         $user->setName($request->get("name"));
         $user->setSurname($request->get("surname"));
 
@@ -150,6 +147,22 @@ class UserController extends FOSRestController
         $em->flush();
         // In case our DELETE was a success we need to return a 204 HTTP NO CONTENT response. The object is deleted.
         return new JsonResponse(array('data' => 123, 'message' => 'User successfully removed!'));
+    }
+
+    /**
+     * http://localhost:8000/api/user/search/?country=italy
+     * Lists all Users born in a country.
+     * @FOSRest\Get("/user/search/")
+     * @param Request $request
+     *
+     * @return View
+     */
+    public function getUsersByCountryAction(Request $request)
+    {
+        $repository = $this->getDoctrine()->getRepository(User::class);
+        $users = $repository->findBy(array("country"=>$request->get('country')));
+
+        return View::create($users, Response::HTTP_CREATED , []);
     }
 
 }

@@ -1,10 +1,16 @@
 export class User {
-    id?: number;
-    username: string;
-    password: string;
-    name: string;
-    surname: string;
-    birthday: string;
-    country: string;
-    link: string;
+
+  constructor(
+    public username: string,
+    public password: string,
+    public name: string,
+    public surname: string,
+    public birthday?: string,
+    public country?: string,
+    public link?: string,
+    public status?: any,
+    public roles?: any,
+    public skills?: any
+  ) {  }
+
 }

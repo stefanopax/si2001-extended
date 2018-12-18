@@ -1,4 +1,4 @@
-<h1 style="font-family: Optima">Status</h1>
+<h1>Status</h1>
 <br>
 <div *ngIf="allstatus; then thenBlock else elseBlock"></div>
 <ng-template #thenBlock>
@@ -12,7 +12,10 @@
     <tbody>
     <tr *ngFor="let status of allstatus">
       <td>{{ status.name }}</td>
-      <td><i>In working</i></td>
+      <td>
+        <a class="btn btn-primary" [routerLink]="['/status', status.id]">Show</a>&nbsp;
+        <a class="btn btn-danger" [routerLink]="['/status', status.id, 'edit']">Edit</a>
+      </td>
     </tr>
     </tbody>
   </table>

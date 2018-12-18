@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from "../user.service";
-import { ActivatedRoute, ParamMap } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+import { UserService } from "../user.service";
+import { ActivatedRoute } from '@angular/router';
+import { UtilityService } from "../../utility.service";
 
 @Component({
   selector: 'app-user-detail',
@@ -14,12 +14,14 @@ export class UserDetailComponent implements OnInit {
   id;
 
   constructor(
+    private utilityService: UtilityService,
     private userService: UserService,
     private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
-   this.id=this.getParamValues();
+    this.utilityService.setTitle('User | SI2001');
+   this.id=this.getParamValues('id');
     this.userService.getOneUser(this.id)
       .subscribe((result) => {
         console.log(result);
@@ -27,8 +29,8 @@ export class UserDetailComponent implements OnInit {
       });
   }
 
-  getParamValues(): string {
-    return this.route.snapshot.params['id'];
+  getParamValues(id: string): string {
+    return this.route.snapshot.params[id];
   }
 
 }

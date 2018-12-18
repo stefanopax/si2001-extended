@@ -10,6 +10,8 @@ import { StatusComponent } from './status/status.component';
 import { SkillComponent } from './skill/skill.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UserModule } from './user/user.module';
+import { StatusModule } from './status/status.module';
+import { SkillModule } from './skill/skill.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,10 @@ import { UserModule } from './user/user.module';
   imports: [
     BrowserModule,
     UserModule,
+    StatusModule,
+    SkillModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
 ],
   providers: [
     Title

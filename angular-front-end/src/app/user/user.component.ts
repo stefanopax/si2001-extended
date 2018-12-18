@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from './user.service';
 import { User } from "./user";
-import { UtilityService} from "../utility.service";
+import { UtilityService } from "../utility.service";
 
 @Component({
   selector: 'app-user',
@@ -24,6 +24,5 @@ export class UserComponent implements OnInit {
         console.log(result);
         this.users = result;
     });
-    // this.userService.postUser(this.user).subscribe();
   }
 }
