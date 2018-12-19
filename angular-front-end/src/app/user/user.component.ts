@@ -19,6 +19,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     this.utilityService.setTitle('Employees | SI2001');
+
     this.userService.getUsers()
       .subscribe((result) => {
         console.log(result);

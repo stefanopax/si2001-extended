@@ -21,4 +21,4 @@ fos_rest:
         rules:
         - { path: '^/', priorities: ['json'], fallback_format: 'json', prefer_extension: false }
     body_listener:
-        enabled: false
+        enabled: true

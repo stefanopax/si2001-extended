@@ -4,13 +4,11 @@ import { FormsModule }   from '@angular/forms';
 
 import { UserRoutingModule } from './user-routing.module';
 import { UserDetailComponent } from "./user-detail/user-detail.component";
-import { UserNewComponent } from './user-new/user-new.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
     UserDetailComponent,
-    UserNewComponent,
     UserEditComponent
   ],
   imports: [

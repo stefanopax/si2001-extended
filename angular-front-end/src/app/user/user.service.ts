@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpClientModule } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { User } from './user';
 
 @Injectable({
@@ -10,24 +10,43 @@ import { User } from './user';
 export class UserService {
 
     private userUrl = 'http://localhost:8000/api/user';  // URL to web api
+
     constructor(
-        private _http: HttpClient) { }
+        private _http: HttpClient
+    ) { }
 
     /** GET users from the server */
     getUsers (): Observable<any> {
       return this._http.get(this.userUrl);
     }
 
-    /** GET users from the server */
+    /** GET user from the server */
     getOneUser (id: string): Observable<any> {
       let url = `${this.userUrl}/${id}`;
       return this._http.get(url);
     }
 
+    /** GET users by country */
+    getUsersByCountry (country: string): Observable<any> {
+      let url = `${this.userUrl}search/${country}`;
+      return this._http.get(url);
+    }
+
     /** POST user to server */
-    addUser (myUser: string) {
-      let url = `${this.userUrl}?${myUser}`;
-      return this._http.post(url,'');
+    addUser (myUser: User) {
+      return this._http.post(this.userUrl, myUser);
+    }
+
+    /** PUT user to server */
+    editUser (id: string, myUser: User) {
+      let url = `${this.userUrl}/${id}`;
+      return this._http.put(url, myUser);
+    }
+
+    /** DELETE user from server */
+    deleteser (id: string) {
+      let url = `${this.userUrl}/${id}`;
+      return this._http.delete(url);
     }
 
 }

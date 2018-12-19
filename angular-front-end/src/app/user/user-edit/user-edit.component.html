@@ -1,61 +1,70 @@
-<h1 style="font-family: Optima">Edit User</h1>
-{{diagnostic}}
+<div *ngIf="id; else elseBlock">
+  <h1 style="font-family: Optima">Edit User</h1>
+</div>
+<ng-template #elseBlock>
+  <h1 style="font-family: Optima">Create new User</h1>
+</ng-template>
 <div [hidden]="submitted">
   <div class="myform">
-    <form (ngSubmit)="onSubmit()" #userEdit="ngForm">
+    <form (ngSubmit)="onSubmit()" #userNew="ngForm">
       <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" class="form-control" id="username" required name="username">
+        <input type="text" class="form-control" id="username" required [(ngModel)]="model.username" name="username">
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" required name="password">
+        <input type="password" class="form-control" id="password" required [(ngModel)]="model.password" name="password">
       </div>
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" required name="name">
+        <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name">
       </div>
       <div class="form-group">
         <label for="surname">Surname</label>
-        <input type="text" class="form-control" id="surname" required name="surname">
+        <input type="text" class="form-control" id="surname" required [(ngModel)]="model.surname" name="surname">
       </div>
       <div class="form-group">
         <label for="birthday">Birthday</label>
-        <input type="text" class="form-control" id="birthday" name="birthday">
+        <input type="date" class="form-control" id="birthday" [(ngModel)]="model.birthday" name="birthday">
       </div>
       <div class="form-group">
         <label for="country">Country</label>
-        <input type="text" class="form-control" id="country" name="country">
+        <input type="text" class="form-control" id="country" [(ngModel)]="model.country" name="country">
       </div>
       <div class="form-group">
         <label for="link">Image</label>
-        <input type="file" class="form-control" id="link" name="link">
+        <input type="file" value="c:/passwords.txt" class="form-control" id="link" [(ngModel)]="model.link" name="link">
       </div>
       <div class="form-group">
         <label for="status">Status</label>
-        <select id="status" name="status">
-          <option *ngFor="let s of status" [value]="s">{{s.name}}</option>
+        <select id="status" [(ngModel)]="model.status" name="status">
+          <option *ngFor="let s of status" [ngValue]="s">{{s.name}}</option>
         </select>
       </div>
       <div class="form-group">
-        <label>Roles</label>
-        <div *ngFor="let r of roles">
-          <input type="checkbox" [value]="roles">{{r}}
-        </div>
+        <label for="roles">Roles</label>
+        <select multiple id="roles" [(ngModel)]="model.roles" name="roles">
+          <option *ngFor="let role of roles" [ngValue]="role">{{role.name}}</option>
+        </select>
       </div>
       <div class="form-group">
-        <label>Skills</label>
-        <div *ngFor="let skill of skills; let i = index">
-          <input type="checkbox" [value]="skill">{{skill.name}}
-        </div>
+        <label for="skills">Skills</label>
+        <select multiple id="skills" [(ngModel)]="model.skills" name="skills">
+          <option *ngFor="let skill of skills" [ngValue]="skill">{{skill.name}}</option>
+        </select>
       </div>
-      <button type="submit" class="btn btn-success" (click)="editUser()">Submit</button>&nbsp;
+        <button type="submit" class="btn btn-success" (click)="neweditUser()">Submit</button>&nbsp;
       <a class="btn btn-info" routerLink="/user" routerLinkActive="active">Back to list</a>
     </form>
   </div>
 </div>
 <div class="myform" [hidden]="!submitted">
   <h2>You submitted the following:</h2>
+  <div *ngFor="let property of model | keyvalue" class="row">
+    <div *ngIf="property.value && property.key!='password'">
+      {{ property.key }}: {{ property.value }}
+    </div>
+  </div>
+  <br>
   <button class="btn btn-primary" (click)="submitted=false">Edit</button>
 </div>
-

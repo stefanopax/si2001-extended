@@ -11,6 +11,6 @@ export class User {
     public status?: any,
     public roles?: any,
     public skills?: any
-  ) {  }
+  ) { }
 
 }

@@ -8,7 +8,11 @@
 
 namespace App\Controller\Rest;
 
+use App\Entity\Role;
+use App\Entity\Skill;
+use App\Entity\Status;
 use App\Entity\User;
+use DateTime;
 use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -68,7 +72,7 @@ class UserController extends FOSRestController
     }
 
     /**
-     * http://localhost:8000/api/user?name=user&surname=myuser&username=user&password=user
+     * http://localhost:8000/api/user
      * Create User.
      * @FOSRest\Post("/user")
      * @param Request $request
@@ -78,6 +82,7 @@ class UserController extends FOSRestController
     public function postUserAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
         $user = new User();
+
         // insert not-nullable fields
         $user->setUsername($request->get("username"));
         $user->setPassword(
@@ -85,7 +90,33 @@ class UserController extends FOSRestController
         $user->setName($request->get("name"));
         $user->setSurname($request->get("surname"));
 
+        // check if nullable fields are present, then insert
+        if($birthday = \DateTime::createFromFormat('Y-m-d', $request->get("birthday")))
+            $user->setBirthday($birthday);
+        if($country = $request->get("country"))
+            $user->setCountry($country);
+        if($image = $request->get("image"))
+            $user->setLink($image);
         $em = $this->getDoctrine()->getManager();
+        if($status = $request->get("status")){
+            $myId = $status["id"];
+            $myStatus = $em->getRepository(Status::class)->find($myId);
+            $user->setStatus($myStatus);
+        }
+        if($roles = $request->get("roles")){
+            foreach($roles as  $role){
+                $myId = $role["id"];
+                $myRole = $em->getRepository(Role::class)->find($myId);
+                $user->addRole($myRole);
+            }
+        }
+        if($skills = $request->get("skills")){
+            foreach($skills as  $skill){
+                $myId = $skill["id"];
+                $mySkill = $em->getRepository(Skill::class)->find($myId);
+                $user->addSkillId($mySkill);
+            }
+        }
 
         $em->persist($user);
         $em->flush();
@@ -94,21 +125,54 @@ class UserController extends FOSRestController
     }
 
     /**
-     * http://localhost:8000/api/user/2?name=user10
+     * http://localhost:8000/api/user/2
      * Replaces User resource
      * @FOSRest\Put("/user/{id}")
      * @param int $id
      * @param Request $request
      *
-     * @return JsonResponse
+     * @return View
      */
-    public function putUser(int $id, Request $request): JsonResponse
+    public function putUser(int $id, Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
         $em = $this->getDoctrine()->getManager();
         $user = $em->getRepository(User::class)->find($id);
 
         if($user) {
-            $user->setName($request->get('name'));
+            // insert not-nullable fields
+            $user->setUsername($request->get("username"));
+            $user->setPassword(
+                $passwordEncoder->encodePassword($user, $request->get("username")));
+            $user->setName($request->get("name"));
+            $user->setSurname($request->get("surname"));
+
+            // check if nullable fields are present, then insert
+            if($birthday = \DateTime::createFromFormat('Y-m-d', $request->get("birthday")))
+                $user->setBirthday($birthday);
+            if($country = $request->get("country"))
+                $user->setCountry($country);
+            if($image = $request->get("image"))
+                $user->setLink($image);
+            $em = $this->getDoctrine()->getManager();
+            if($status = $request->get("status")){
+                $myId = $status["id"];
+                $myStatus = $em->getRepository(Status::class)->find($myId);
+                $user->setStatus($myStatus);
+            }
+            if($roles = $request->get("roles")){
+                foreach($roles as  $role){
+                    $myId = $role["id"];
+                    $myRole = $em->getRepository(Role::class)->find($myId);
+                    $user->addRole($myRole);
+                }
+            }
+            if($skills = $request->get("skills")){
+                foreach($skills as  $skill){
+                    $myId = $skill["id"];
+                    $mySkill = $em->getRepository(Skill::class)->find($myId);
+                    $user->addSkillId($mySkill);
+                }
+            }
         }
         else {
             throw $this->createNotFoundException(
@@ -118,8 +182,8 @@ class UserController extends FOSRestController
 
         $em->persist($user);
         $em->flush();
-        // In case our PUT was a success we need to return a 200 HTTP OK response with the object as a result of PUT
-        return new JsonResponse(array('data' => 123, 'message' => 'User successfully updated!'));
+
+        return View::create($user, Response::HTTP_CREATED , []);
     }
 
     /**
@@ -133,14 +197,14 @@ class UserController extends FOSRestController
     public function deleteUser(int $id): JsonResponse
     {
         $em = $this->getDoctrine()->getManager();
-        $user= $em->getRepository(User::class)->find($id);
+        $user = $em->getRepository(User::class)->find($id);
 
         if ($user) {
             $em->remove($user);
         }
         else {
             throw $this->createNotFoundException(
-                'No user found for id '.$id
+                'No user found for id '. $id
             );
         }
 
@@ -150,9 +214,9 @@ class UserController extends FOSRestController
     }
 
     /**
-     * http://localhost:8000/api/user/search/?country=italy
+     * http://localhost:8000/api/usersearch/country=italy
      * Lists all Users born in a country.
-     * @FOSRest\Get("/user/search/")
+     * @FOSRest\Get("/usersearch/")
      * @param Request $request
      *
      * @return View
@@ -163,6 +227,23 @@ class UserController extends FOSRestController
         $users = $repository->findBy(array("country"=>$request->get('country')));
 
         return View::create($users, Response::HTTP_CREATED , []);
+    }
+
+    /**
+     * http://localhost:8000/api/userrole/1
+     * Find User.
+     * @FOSRest\Get("/userrole/{id}")
+     * @param int $id
+     *
+     * @return View
+     */
+    public function getRolesByUserAction(int $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        // $user = $em->getRepository(User::class)->findBy(array('id' => $id)); this returns an object to serialize
+        $user = $em->getRepository(User::class)->find($id);
+
+        return View::create($user->getRoles(), Response::HTTP_CREATED , []);
     }
 
 }
