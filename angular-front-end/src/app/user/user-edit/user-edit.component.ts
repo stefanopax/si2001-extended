@@ -99,10 +99,6 @@ export class UserEditComponent implements OnInit {
     }
   }
 
-  newUser() {
-
-  }
-
   /*
   deleteUser() {
     console.log("Adding user..." + this.model);

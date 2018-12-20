@@ -44,7 +44,7 @@ export class UserService {
     }
 
     /** DELETE user from server */
-    deleteser (id: string) {
+    deleteUser (id: string) {
       let url = `${this.userUrl}/${id}`;
       return this._http.delete(url);
     }

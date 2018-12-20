@@ -13,3 +13,8 @@ li{
 {
   box-shadow: 0 1px 0px 0px #000;
 }
+label
+{
+  font-family: Palatino;
+  font-size: 1.2em;
+}

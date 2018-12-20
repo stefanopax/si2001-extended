@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from './user.service';
-import { User } from "./user";
 import { UtilityService } from "../utility.service";
 
 @Component({
@@ -25,5 +24,14 @@ export class UserComponent implements OnInit {
         console.log(result);
         this.users = result;
     });
+
+    if(this.utilityService.input)
+      this.showCountry(this.utilityService.input)
+
   }
+
+  showCountry(country: string) {
+    console.log("Sono in user e ricevo: "+ country)
+  }
+
 }

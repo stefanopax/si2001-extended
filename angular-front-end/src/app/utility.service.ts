@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { Title }     from '@angular/platform-browser';
 
 @Injectable({
@@ -9,6 +9,7 @@ import { Title }     from '@angular/platform-browser';
 export class UtilityService {
 
   private roleUrl = 'http://localhost:8000/api/role';
+  input: string;
 
   constructor(
     private titleService: Title,
@@ -20,7 +21,8 @@ export class UtilityService {
   }
 
   /** GET roles from the server */
-  getRoles (): Observable<any> {
+  getRoles(): Observable<any> {
     return this._http.get(this.roleUrl);
   }
+
 }

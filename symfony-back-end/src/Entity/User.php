@@ -64,10 +64,10 @@ class User implements UserInterface, \Serializable
     private $skill_ids;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Role", cascade={"remove"})
+     * @ORM\ManyToMany(targetEntity="App\Entity\Role", cascade={"persist"})
      * @ORM\JoinTable(name="owns",
      *      joinColumns={@ORM\JoinColumn(name="user", referencedColumnName="id", onDelete="CASCADE")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="role", referencedColumnName="id")}
+     *      inverseJoinColumns={@ORM\JoinColumn(name="role", referencedColumnName="id", onDelete="CASCADE")}
      *      )
      */
     private $role_ids;

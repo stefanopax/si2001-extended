@@ -64,9 +64,11 @@
         </tr>
       </tbody>
     </table>
-    <a class="btn btn-info" routerLink="/user" routerLinkActive="active">Back to list</a>&nbsp;
-    <a class="btn btn-warning" [routerLink]="['/user', user.id, 'edit']">Edit</a>&nbsp;
-    <button type="submit" class="btn btn-danger" (click)="deleteUser()">Delete</button>
+    <form (ngSubmit)="onSubmit()">
+      <a class="btn btn-info" routerLink="/user" routerLinkActive="active">Back to list</a>&nbsp;
+      <a class="btn btn-warning" [routerLink]="['/user', user.id, 'edit']">Edit</a>&nbsp;
+      <button type="submit" class="btn btn-danger" (click)="deleteUser()">Delete</button>
+    </form>
   </div>
 </div>
 <div class="myform" [hidden]="!submitted">
