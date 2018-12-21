@@ -10,8 +10,9 @@ import { StatusService } from "../status.service";
 })
 export class StatusDetailComponent implements OnInit {
 
-  status;
   id;
+  status;
+  submitted = false;
 
   constructor(
     private utilityService: UtilityService,
@@ -21,6 +22,7 @@ export class StatusDetailComponent implements OnInit {
 
   ngOnInit() {
     this.utilityService.setTitle('Status | SI2001');
+
     this.id=this.getParamValues('id');
     this.statusService.getOneStatus(this.id)
       .subscribe((result) => {
@@ -29,8 +31,21 @@ export class StatusDetailComponent implements OnInit {
       });
   }
 
+  onSubmit() {
+    this.submitted = true;
+  }
+
   getParamValues(id: string): string {
     return this.route.snapshot.params[id];
+  }
+
+  deleteStatus() {
+    console.log("Deleting status...");
+    this.statusService.deleteStatus(this.id)
+      .subscribe((result) => {
+        console.log(result);
+        this.status = result;
+      });
   }
 
 }

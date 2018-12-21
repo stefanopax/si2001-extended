@@ -1,15 +1,22 @@
 <h1>Status</h1>
-<div class="myform">
-  <table class="table">
-    <tbody>
-    <tr>
-      <th>Name</th>
-      <td>{{ status.name }}</td>
-    </tr>
-    </tbody>
-  </table>
-  <div class="d-flex justify-content-start">
-    <a class="btn btn-info" routerLink="/status" routerLinkActive="active">Back to list</a>&nbsp;
-    <a class="btn btn-danger" [routerLink]="['/status/edit', status.id]">Edit</a>
+  <div [hidden]="submitted">
+  <div class="myform">
+    <table class="table">
+      <tbody>
+      <tr>
+        <th>Name</th>
+        <td>{{ status.name }}</td>
+      </tr>
+      </tbody>
+    </table>
+    <form (ngSubmit)="onSubmit()">
+      <a class="btn btn-info" routerLink="/status" routerLinkActive="active">Back to list</a>&nbsp;
+      <a class="btn btn-warning" [routerLink]="['/status', status.id, 'edit']">Edit</a>&nbsp;
+      <button type="submit" class="btn btn-danger" (click)="deleteStatus()">Delete</button>
+    </form>
   </div>
+</div>
+<div class="myform" [hidden]="!submitted">
+  <h2>You successfully deleted the status</h2>
+  <a class="btn btn-info" routerLink="/status" routerLinkActive="active">Back to list</a>
 </div>

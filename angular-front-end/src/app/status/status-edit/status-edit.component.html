@@ -1,3 +1,29 @@
-<p>
-  status-edit works!
-</p>
+<div *ngIf="id; else elseBlock">
+  <h1 style="font-family: Optima">Edit Status</h1>
+</div>
+<ng-template #elseBlock>
+  <h1 style="font-family: Optima">Create new Status</h1>
+</ng-template>
+<div [hidden]="submitted">
+  <div class="myform">
+    <form (ngSubmit)="onSubmit()" #statusNew="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="model.name" name="name" required>
+      </div>
+
+      <button type="submit" class="btn btn-success" (click)="neweditStatus()">Submit</button>&nbsp;
+      <a class="btn btn-info" routerLink="/status" routerLinkActive="active">Back to list</a>
+    </form>
+  </div>
+</div>
+<div class="myform" [hidden]="!submitted">
+  <h2>You submitted the following:</h2>
+  <div *ngFor="let property of model | keyvalue" class="row">
+    <div *ngIf="property.value && property.key!='password'">
+      {{ property.key }}: {{ property.value }}
+    </div>
+  </div>
+  <br>
+  <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+</div>

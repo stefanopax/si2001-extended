@@ -1,13 +1,15 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
 
-.a{
+.a
+{
     margin: auto;
     border: 3px outset #D4DFDF;
     padding: 10px;
     width: 50%;
     height: 90%;
 }
-li{
+li
+{
     font-family: Palatino;
     font-size: 1.2em;
 }

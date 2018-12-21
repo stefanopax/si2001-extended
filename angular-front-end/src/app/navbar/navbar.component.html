@@ -19,10 +19,12 @@
         </li>
       </ul>
       <ul class="navbar-nav navbar-right">
-        <form class="form-inline" (ngSubmit)="onSubmit()" #navbar="ngForm">
-          <label for="input">Search users by country &nbsp;</label>
-          <input class="form-control mr-sm-2" id="input" type="search" [(ngModel)]="input" name="input" placeholder="Country" aria-label="Search" required>
-          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>&nbsp;
+        <form class="form-inline" #navbar="ngForm">
+          <div class="form-group">
+            <label for="input">Search users by country &nbsp;</label>
+            <input class="form-control mr-sm-2" id="input" type="search" [(ngModel)]="input" name="input" placeholder="Country" aria-label="Search" required>
+            <button class="btn btn-outline-info my-2 my-sm-0" (click)="sendValues()" type="submit">Search</button>&nbsp;
+          </div>
         </form>
         <li class="nav-item dropdown border-left">
           <div id="container">

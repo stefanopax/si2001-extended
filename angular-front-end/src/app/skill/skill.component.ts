@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillService } from './skill.service';
-import { Status } from "../status/status";
 import { UtilityService } from "../utility.service";
 
 @Component({

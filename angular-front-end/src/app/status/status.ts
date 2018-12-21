@@ -1,4 +1,5 @@
 export class Status {
-    id?: number;
-    name: string;
+    constructor(
+      public name: string
+  ) {}
 }

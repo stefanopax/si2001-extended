@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { Skill } from './skill';
 
 @Injectable({
@@ -24,8 +24,20 @@ export class SkillService {
   }
 
   /** POST skill to server */
-  postSkill (mySkill: Skill): Observable<any> {
+  addSkill (mySkill: Skill) {
     return this._http.post(this.skillUrl, mySkill);
+  }
+
+  /** PUT skill to server */
+  editSkill (id: string, mySkill: Skill) {
+    let url = `${this.skillUrl}/${id}`;
+    return this._http.put(url, mySkill);
+  }
+
+  /** DELETE skill from server */
+  deleteSkill (id: string) {
+    let url = `${this.skillUrl}/${id}`;
+    return this._http.delete(url);
   }
 
 }

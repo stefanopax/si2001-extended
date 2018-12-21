@@ -8,14 +8,16 @@ import { UtilityService } from "../utility.service";
 })
 export class NavbarComponent implements OnInit {
 
-  input;
+  input: string;
 
   constructor(
     private utilityService: UtilityService
   ) { }
 
   ngOnInit() {
-    this.utilityService.input = this.input;
   }
 
+  sendValues(){
+    this.utilityService.input = this.input;
+  }
 }

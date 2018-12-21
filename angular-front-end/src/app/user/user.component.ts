@@ -23,15 +23,14 @@ export class UserComponent implements OnInit {
       .subscribe((result) => {
         console.log(result);
         this.users = result;
-    });
+      });
 
-    if(this.utilityService.input)
-      this.showCountry(this.utilityService.input)
-
+    this.showCountry(this.utilityService.input)
   }
 
   showCountry(country: string) {
-    console.log("Sono in user e ricevo: "+ country)
+    if(this.utilityService.input)
+      console.log("Sono in user e ricevo: "+ country)
   }
 
 }

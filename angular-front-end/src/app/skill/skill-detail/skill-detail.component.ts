@@ -10,8 +10,9 @@ import { SkillService } from "../skill.service";
 })
 export class SkillDetailComponent implements OnInit {
 
-  skill;
   id;
+  skill;
+  submitted = false;
 
   constructor(
     private utilityService: UtilityService,
@@ -32,6 +33,19 @@ export class SkillDetailComponent implements OnInit {
   getParamValues(id: string): string {
     return this.
       route.snapshot.params[id];
+  }
+
+  onSubmit() {
+    this.submitted = true;
+  }
+
+  deleteSkill() {
+    console.log("Deleting skill...");
+    this.skillService.deleteSkill(this.id)
+      .subscribe((result) => {
+        console.log(result);
+        this.skill = result;
+      });
   }
 
 }

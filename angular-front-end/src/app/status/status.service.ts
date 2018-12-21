@@ -25,8 +25,20 @@ export class StatusService {
   }
 
   /** POST status to server */
-  postStatus (myStatus: Status): Observable<any> {
+  addStatus (myStatus: Status) {
     return this._http.post(this.statusUrl, myStatus);
+  }
+
+  /** PUT status to server */
+  editStatus (id: string, myStatus: Status) {
+    let url = `${this.statusUrl}/${id}`;
+    return this._http.put(url, myStatus);
+  }
+
+  /** DELETE status from server */
+  deleteStatus (id: string) {
+    let url = `${this.statusUrl}/${id}`;
+    return this._http.delete(url);
   }
 
 }

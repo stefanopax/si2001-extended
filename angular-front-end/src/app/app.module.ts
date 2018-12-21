@@ -17,8 +17,8 @@ import { SkillModule } from './skill/skill.module';
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
     NavbarComponent,
+    UserComponent,
     StatusComponent,
     SkillComponent,
     PageNotFoundComponent,

@@ -10,8 +10,8 @@ import { UtilityService } from "../../utility.service";
 })
 export class UserDetailComponent implements OnInit {
 
-  user;
   id;
+  user;
   submitted = false;
 
   constructor(
@@ -21,7 +21,6 @@ export class UserDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
   this.utilityService.setTitle('User | SI2001');
 
   this.id=this.getParamValues('id');

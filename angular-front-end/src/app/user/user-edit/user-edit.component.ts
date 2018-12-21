@@ -30,7 +30,6 @@ export class UserEditComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.utilityService.setTitle('Edit User | SI2001');
 
     // saving id param from url to discriminate between create and edit user
     this.id = this.getParamValues('id');
@@ -57,6 +56,8 @@ export class UserEditComponent implements OnInit {
       });
 
     if(this.id) {
+      this.utilityService.setTitle('Edit User | SI2001');
+
       // get user requested
       this.userService.getOneUser(this.id)
         .subscribe((result) => {
@@ -64,7 +65,8 @@ export class UserEditComponent implements OnInit {
           this.model = result;
         });
     }
-    else{
+    else {
+      this.utilityService.setTitle('New User | SI2001');
       this.model = new User('', '', '', '', '', '', '', [], [], []);
     }
 
@@ -98,16 +100,5 @@ export class UserEditComponent implements OnInit {
         });
     }
   }
-
-  /*
-  deleteUser() {
-    console.log("Adding user..." + this.model);
-    this.userService.addUser(this.model)
-      .subscribe((result) => {
-        console.log(result);
-        this.model = <User> result;
-      });
-  }
-  */
 
 }
