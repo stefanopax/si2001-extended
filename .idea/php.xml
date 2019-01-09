@@ -126,4 +126,5 @@
       <path value="$PROJECT_DIR$/symfony-platform/vendor/jms/serializer" />
     </include_path>
   </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
 </project>

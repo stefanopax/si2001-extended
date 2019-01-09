@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { Title }     from '@angular/platform-browser';
+import { Title } from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,8 @@ import { Title }     from '@angular/platform-browser';
 export class UtilityService {
 
   private roleUrl = 'http://localhost:8000/api/role';
-  input: string;
+  private myInput = new BehaviorSubject<string>("");
+  input = this.myInput.asObservable();
 
   constructor(
     private titleService: Title,
@@ -24,5 +25,4 @@ export class UtilityService {
   getRoles(): Observable<any> {
     return this._http.get(this.roleUrl);
   }
-
 }

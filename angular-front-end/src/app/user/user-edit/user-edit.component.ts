@@ -62,7 +62,7 @@ export class UserEditComponent implements OnInit {
       this.userService.getOneUser(this.id)
         .subscribe((result) => {
           console.log(result);
-          this.model = result;
+          this.model = <User> result;
         });
     }
     else {
@@ -82,7 +82,7 @@ export class UserEditComponent implements OnInit {
     this.submitted = true;
   }
 
-  neweditUser() {
+  newEditUser() {
     if(this.id){
       console.log("Editing user..." + this.model);
       this.userService.editUser(this.id, this.model)

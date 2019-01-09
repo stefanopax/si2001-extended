@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { UtilityService } from "../utility.service";
+import { Subject } from 'rxjs';
+import { Router } from '@angular/router'
+
+export const myInput$ = new Subject<string>();
 
 @Component({
   selector: 'app-navbar',
@@ -9,15 +12,20 @@ import { UtilityService } from "../utility.service";
 export class NavbarComponent implements OnInit {
 
   input: string;
+  baseUrl: string;
 
   constructor(
-    private utilityService: UtilityService
+    private router: Router
   ) { }
 
   ngOnInit() {
+    this.baseUrl = location.origin;
   }
 
-  sendValues(){
-    this.utilityService.input = this.input;
+  sendValues() {
+    this.router.navigate(['/user']);
+    localStorage.setItem('search', 'myString');
+    myInput$.next(this.input);
   }
+
 }

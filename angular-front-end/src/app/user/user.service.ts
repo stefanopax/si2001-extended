@@ -21,14 +21,8 @@ export class UserService {
     }
 
     /** GET user from the server */
-    getOneUser (id: string): Observable<any> {
+    getOneUser (id: string) {
       let url = `${this.userUrl}/${id}`;
-      return this._http.get(url);
-    }
-
-    /** GET users by country */
-    getUsersByCountry (country: string): Observable<any> {
-      let url = `${this.userUrl}search/${country}`;
       return this._http.get(url);
     }
 

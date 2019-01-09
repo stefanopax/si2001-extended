@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * Skill: si2001
- * Date: 12/6/18
- * Time: 5:19 PM
- */
 
 namespace App\Controller\Rest;
 

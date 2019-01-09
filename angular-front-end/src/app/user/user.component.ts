@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from './user.service';
-import { UtilityService } from "../utility.service";
+import { UtilityService } from '../utility.service';
+import { myInput$ } from '../navbar/navbar.component';
+import { filter, cloneDeep }  from 'lodash';
+
 
 @Component({
   selector: 'app-user',
@@ -10,27 +13,40 @@ import { UtilityService } from "../utility.service";
 export class UserComponent implements OnInit {
 
   users;
+  originalUsers;
+  myInput : string;
 
   constructor(
     private userService: UserService,
-    private utilityService: UtilityService
+    private utilityService: UtilityService,
   ) { }
 
   ngOnInit() {
     this.utilityService.setTitle('Employees | SI2001');
 
-    this.userService.getUsers()
-      .subscribe((result) => {
-        console.log(result);
-        this.users = result;
+    myInput$.asObservable().subscribe(myInput => {
+      this.myInput = myInput;
+      this.users = filter(this.originalUsers, (user) => {
+        return user.country === this.myInput;
       });
+      console.log(this.users)
+    });
 
-    this.showCountry(this.utilityService.input)
-  }
-
-  showCountry(country: string) {
-    if(this.utilityService.input)
-      console.log("Sono in user e ricevo: "+ country)
+    if(localStorage.getItem('search')) {
+      // comes from navbar search function
+      this.users = filter(this.originalUsers, (user) => {
+        return user.country === myInput$;
+      });
+      localStorage.removeItem('search')
+    }
+    else {
+      this.userService.getUsers()
+        .subscribe((result) => {
+          console.log(result);
+          this.users = result;
+          this.originalUsers = cloneDeep(this.users);
+        });
+    }
   }
 
 }

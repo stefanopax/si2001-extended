@@ -9,7 +9,7 @@
     <form (ngSubmit)="onSubmit()" #skillNew="ngForm">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="model.name" name="name" required>
+        <input type="text" class="form-control" id="name" autofocus [(ngModel)]="model.name" name="name" required>
       </div>
       <button type="submit" class="btn btn-success" (click)="neweditSkill()">Submit</button>&nbsp;
       <a class="btn btn-info" routerLink="/skill" routerLinkActive="active">Back to list</a>
